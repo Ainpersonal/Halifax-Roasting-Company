@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halifax Roasting Company | The Best Handmade Coffee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo-container">
+            <img src="icon/logohalifax.jpg" alt="Halifax Roasting Company Logo" class="logo-img">
+        </div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Dive Into Luxury</h1>
+                <p>The Best Handmade Coffee in Town.</p>
+                <a href="#menu" class="btn-gold">Explore Our Menu</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="section-title">
+                <h2>About Us</h2>
+                <div class="line-gold"></div>
+            </div>
+
+            <div class="about-container">
+                <div class="about-row">
+                    <div class="about-image">
+                        <img src="assets/photo2.jpg" alt="Our Coffee Shop">
+                    </div>
+                    <div class="about-text">
+                        <h3>Our Story</h3>
+                        <p>Berdiri dengan semangat untuk menyajikan kopi buatan tangan terbaik, Halifax Roasting Company adalah destinasi Anda untuk menikmati nuansa kopi yang mewah dan sejuk. Kami memanggang biji kopi pilihan dengan dedikasi tinggi untuk memberikan pengalaman ngopi yang tak terlupakan.</p>
+                    </div>
+                </div>
+
+                <div class="about-row reverse">
+                    <div class="about-image">
+                        <img src="assets/photo3.jpg" alt="Coffee Roasting Process">
+                    </div>
+                    <div class="about-text">
+                        <h3>The Perfect Roast</h3>
+                        <p>Tempat dan ruangan di desain senyaman mungkin dengan suasana luxury yang memanjakan mata. Ruangan yang di desain agar kedap suara dari luar toko membuat suasana santai anda lebih nyaman</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu-section">
+            <div class="section-title">
+                <h2>Our Menu</h2>
+                <div class="line-gold"></div>
+            </div>
+            
+            <div class="menu-carousel-container">
+                <div class="menu-card item-left" onclick="moveCarousel(this)">
+    <img src="menu/menu1.png" alt="Ocean Blue Latte" class="menu-img">
+    <div class="menu-info">
+        <h3>Maccha Extra Toping</h3>
+        <p>Signature matcha dengan sentuhan sirup blue curacao dan susu steamed.</p>
+        <span class="price">Rp 25.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-center" onclick="moveCarousel(this)">
+    <img src="menu/menu2.png" alt="Golden Espresso" class="menu-img">
+    <div class="menu-info">
+        <h3>Golden Espresso</h3>
+        <p>Double shot espresso dari biji kopi premium arabica pilihan terbaik kami.</p>
+        <span class="price">Rp 35.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-right" onclick="moveCarousel(this)">
+    <img src="menu/menu3.png" alt="Halifax Cold Brew" class="menu-img">
+    <div class="menu-info">
+        <h3>Halifax Cold Strawberry</h3>
+        <p>Minuman menghasilkan rasa yang smooth dan menyegarkan dengan perpaduan buah strawberry dengan anggur.</p>
+        <span class="price">Rp 40.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu4.png" alt="Sapphire Mocha" class="menu-img">
+    <div class="menu-info">
+        <h3>Americano</h3>
+        <p>Americano dengan kombinasi sianida dan espresso memberikan sensai melayang.</p>
+        <span class="price">Rp 48.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu5.png" alt="Vanilla Sea Salt" class="menu-img">
+    <div class="menu-info">
+        <h3>Vanilla Sea Salt Latte</h3>
+        <p>Karamel madu dengan taburan sea salt di atas foam vanilla yang lembut.</p>
+        <span class="price">Rp 42.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu6.png" alt="Midnight Americano" class="menu-img">
+    <div class="menu-info">
+        <h3>Midnight Manggo</h3>
+        <p>Just extract mangga asli dengan campuran coctail berkualitas dengan es batu kristal yang memberikan kesejukan mutlak.</p>
+        <span class="price">Rp 30.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu7.png" alt="Hazelnut Velvet" class="menu-img">
+    <div class="menu-info">
+        <h3>Lemon Ice</h3>
+        <p>Kombinasi bir dan coctail dengan toping lemon yang dapat di peras, memberikan sensasi segar.</p>
+        <span class="price">Rp 45.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu8.png" alt="Royal Matchaccino" class="menu-img">
+    <div class="menu-info">
+        <h3>Royal Matchaccino Choclate</h3>
+        <p>Matcha green tea organik dari Jepang berpadu dengan creamy steamed milk dan choclate arabic.</p>
+        <span class="price">Rp 50.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu9.png" alt="Toasted Almond Macchiato" class="menu-img">
+    <div class="menu-info">
+        <h3>Toasted Almond Macchiato</h3>
+        <p>Susu almond hangat dengan siraman espresso tajam di lapisan teratas.</p>
+        <span class="price">Rp 46.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu10.png" alt="Pearl White Frappe" class="menu-img">
+    <div class="menu-info">
+        <h3>Pearl White Frappe</h3>
+        <p>Kopi blended dengan white chocolate dan vanilla bean, sangat creamy.</p>
+        <span class="price">Rp 52.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu11.png" alt="Cinnamon Gold Rush" class="menu-img">
+    <div class="menu-info">
+        <h3>Cinnamon Gold Rush</h3>
+        <p>Kopi rempah dengan kayu manis dan sedikit serpihan edible gold leaf.</p>
+        <span class="price">Rp 55.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu12.png" alt="Azure Peppermint" class="menu-img">
+    <div class="menu-info">
+        <h3>Azure Peppermint</h3>
+        <p>Cokelat mint dingin dipadukan dengan single origin espresso yang segar.</p>
+        <span class="price">Rp 48.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu13.png" alt="Classic Affogato" class="menu-img">
+    <div class="menu-info">
+        <h3>Classic Affogato</h3>
+        <p>Es krim vanilla premium Italia yang ditenggelamkan dalam espresso panas.</p>
+        <span class="price">Rp 40.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu14.png" alt="Earl Grey Blue Splash" class="menu-img">
+    <div class="menu-info">
+        <h3>Earl Grey Splash</h3>
+        <p>Bagi non-kopi: Teh Earl Grey dengan sirup lavender dan lemon segar.</p>
+        <span class="price">Rp 38.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu15.png" alt="Honeycomb Flat White" class="menu-img">
+    <div class="menu-info">
+        <h3>Honeycomb Flat White</h3>
+        <p>Flat white klasik berhiaskan bongkahan honeycomb renyah di atasnya.</p>
+        <span class="price">Rp 47.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu16.png" alt="Deep Ocean Cortado" class="menu-img">
+    <div class="menu-info">
+        <h3>Deep Ocean Cortado</h3>
+        <p>Rasio 1:1 antara espresso pekat dan susu steamed, sangat berkarakter.</p>
+        <span class="price">Rp 35.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu17.png" alt="Caramel Cloud" class="menu-img">
+    <div class="menu-info">
+        <h3>Caramel Cloud</h3>
+        <p>Kopi dengan foam super tebal menyerupai awan dan saus karamel leleh.</p>
+        <span class="price">Rp 45.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu18.png" alt="Majestic Irish" class="menu-img">
+    <div class="menu-info">
+        <h3>Majestic Irish (Halal)</h3>
+        <p>Sensasi rasa krim Irlandia (non-alkohol) dengan kopi panggang gelap.</p>
+        <span class="price">Rp 49.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu19.png" alt="Tropical Espresso" class="menu-img">
+    <div class="menu-info">
+        <h3>Tropical Espresso</h3>
+        <p>Kejutan espresso yang diseduh dengan air kelapa muda dan irisan lemon.</p>
+        <span class="price">Rp 42.000</span>
+    </div>
+</div>
+
+<div class="menu-card item-hidden" onclick="moveCarousel(this)">
+    <img src="menu/menu20.png" alt="Velvet Choco Truffle" class="menu-img">
+    <div class="menu-info">
+        <h3>Velvet Choco Truffle</h3>
+        <p>Minuman cokelat super kental yang memberikan sensasi memakan kue truffle.</p>
+        <span class="price">Rp 50.000</span>
+    </div>
+</div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="section-title">
+                <h2>Our Area</h2>
+                <div class="line-gold"></div>
+            </div>
+            <div class="gallery-grid">
+                <img src="assets/photo1.jpg" alt="Gallery Area 1" class="gallery-item">
+                <img src="assets/photo2.jpg" alt="Gallery Area 2" class="gallery-item">
+                <img src="assets/photo7.jpg" alt="Gallery Area 3" class="gallery-item">
+                <img src="assets/photo8.jpg" alt="Gallery Area 4" class="gallery-item">
+                <img src="assets/photo3.jpg" alt="gallery Area 5" class="gallery-item">
+                <img src="assets/photo4.jpg" alt="Gallery Area 6" class="gallery-item">
+                <img src="assets/photo5.jpg" alt="Gallery Area 7" class="gallery-item">
+                <img src="assets/photo6.jpg" alt="Gallery Area 8" class="gallery-item">
+            </div>
+
+            <h1>Feal The Vibe and Enjoy your drink"</h1>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer-section">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="icon/logohalifax.jpg" alt="Halifax Logo" class="footer-logo">
+                <h3 class="typography-title">HALIFAX</h3>
+                <p class="typography-subtitle">THE BEST HANDMADE COFFEE</p>
+                <p class="brand-desc">Menikmati secangkir kesempurnaan dalam nuansa yang mewah dan sejuk.</p>
+            </div>
+
+            <div class="footer-address">
+                <h3>Visit Us</h3>
+                <div class="line-gold-small"></div>
+                <p>Jl. Sudirman No. 123<br>Kawasan Elit, Kota Medan<br>Sumatera Utara 20111</p>
+                <a href="mailto:hello@halifaxroasting.com" class="contact-email">hello@halifaxroasting.com</a>
+            </div>
+
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="line-gold-small"></div>
+                <div class="social-links">
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Twitter (X)</a>
+                    <a href="#" target="_blank">Facebook</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Halifax Roasting Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
